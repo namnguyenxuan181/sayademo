@@ -21,7 +21,6 @@ def detect_dispose_fraud(df: pd.DataFrame) -> pd.DataFrame:
             return True
         return False
     select_cols = ['tran_at', 'employee', 'product', 'reason']
-    print(df)
     df['is_fraud'] = df.apply(lambda x: detect(x['employee'], x['product']), axis=1)
 
     return df[df.is_fraud == True][select_cols]
