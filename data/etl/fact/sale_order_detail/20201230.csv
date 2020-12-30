@@ -1,4 +1,4 @@
-tran_at,order_id,product_id,product_name,customer_id,customer_name,quantity,unit_prices,discount_amount,amount
+tran_at,order_code,product_id,product_name,customer_id,customer_name,quantity,unit_prices,discount_amount,amount
 2020-12-30 15:48:05,HD301220-0005,HH000008,Đĩa thịt nguội Tây Ba Nha hảo hạng,,Khách lẻ ,3,125000,0,375000
 2020-12-30 15:47:52.370000,HD301220-0004,HH-0003,reception1,,Khách lẻ ,21.733333333333334,0,0,0
 2020-12-30 15:47:22.597000,HD301220-0003,HH000008,Đĩa thịt nguội Tây Ba Nha hảo hạng,,Khách lẻ ,2,125000,0,250000

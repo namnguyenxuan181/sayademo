@@ -1,20 +1,18 @@
-from datetime import datetime, date
+from datetime import date
 
 import pandas as pd
-import xlrd
 
 from common.utils import RunDate
-from pyspark.sql import types as T
 
 
 class FactSaleOrder:
     def __init__(self, run_date: RunDate):
         self.run_date = run_date
 
-    INPUT_COLS = ['product_id', '_0', 'product_name', '_1', '_2', '_3', '_4', 'order_id', '_5',
+    INPUT_COLS = ['product_id', '_0', 'product_name', '_1', '_2', '_3', '_4', 'order_code', '_5',
                   'total_amount', 'tran_at', 'customer_id', 'customer_name', '_7', 'quantity',
                   'unit_prices', '_8', 'retail_prices', 'discount_amount', '_9', '_10', 'amount']
-    SELECT_COLS = ['tran_at', 'order_id', 'product_id', 'product_name', 'customer_id', 'customer_name', 'quantity', 'unit_prices', 'discount_amount', 'amount']
+    SELECT_COLS = ['tran_at', 'order_code', 'product_id', 'product_name', 'customer_id', 'customer_name', 'quantity', 'unit_prices', 'discount_amount', 'amount']
 
     @staticmethod
     def remove_invalid_data(row: str):

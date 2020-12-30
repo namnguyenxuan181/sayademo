@@ -1,10 +1,8 @@
-from datetime import datetime, date
+from datetime import date
 
 import pandas as pd
-import xlrd
 
 from common.utils import RunDate
-from pyspark.sql import types as T
 
 
 class FactSaleOrder:
