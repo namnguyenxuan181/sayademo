@@ -9,7 +9,7 @@ from common.utils import RunDate
 logger = logging.getLogger()
 
 
-def download_customer():
+def download_dispose():
     run_date = RunDate(date.today())
     customer = requests.get(
         f'https://{ShopInfo.NAME}.pos365.vn/Export/RoomHistory?time=7days',
@@ -27,5 +27,5 @@ def download_customer():
 
 
 if __name__ == '__main__':
-    download_customer()
+    download_dispose()
 
