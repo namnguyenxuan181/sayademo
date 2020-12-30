@@ -1,39 +1,39 @@
-,tran_at,employee,product,table,quantity,prices,reason
-0,2020-12-29 14:35:55,booking1,booking1,B.1,0.03333333333333333,0,Thao tác sai
-1,2020-12-29 14:54:14,booking1,Súp hành tây kiểu Pháp,B.1,1.0,125000,Thao tác sai
-2,2020-12-29 14:54:54,booking1,Thịt nguội & phomai viên chiên kiểu Tây Ba Nha,B.1,1.0,125000,Thao tác sai
-3,2020-12-29 14:54:23,booking1,Súp kem rau 4 mùa,B.1,1.0,125000,Thao tác sai
-4,2020-12-29 15:31:18,refer1,booking1,B.1,0.5333333333333333,0,Thao tác sai
-5,2020-12-29 15:32:03,refer1,booking1,B.1,0.55,0,Thao tác sai
-6,2020-12-29 16:02:30,0982906045,Bia Heiniken,B.1,1.0,30000,"Trả hàng từ màn hình khách gọi món, với lý do : "
-7,2020-12-29 16:04:26,0982906045,Bia Heiniken,B.1,2.0,30000,"Trả hàng từ màn hình khách gọi món, với lý do : "
-8,2020-12-29 16:04:56,refer1,Bia Heiniken,B.1,2.0,30000,"Trả hàng từ màn hình khách gọi món, với lý do : Thao tác sai"
-9,2020-12-29 16:07:59,booking1,Bia Heiniken,B.1,1.0,30000,Thao tác sai
-10,2020-12-29 16:14:47,booking1,booking1,B.1,1.2666666666666666,0,Thao tác sai
-11,2020-12-29 16:14:49,booking1,booking1,B.1,1.2666666666666666,0,Thao tác sai
-12,2020-12-29 16:14:53,booking1,booking1,B.1,1.2666666666666666,0,Thao tác sai
-13,2020-12-29 15:48:46,0982906045,refer1,B.3,0.016666666666666666,0,Thao tác sai
-14,2020-12-29 22:26:13,booking1,BLOODY MARY,B.18,5.0,30000,Thao tác sai
-15,2020-12-29 22:34:12,cashier,BLOODY MARY,B.16,1.0,30000,Thao tác sai
-16,2020-12-29 22:36:09,booking1,BLOODY MARY,B.16,4.0,30000,Thao tác sai
-17,2020-12-29 22:22:47,refer1,Súp kém bí đỏ với sữa dừa,B.13,2.0,125000,Thao tác sai
-18,2020-12-29 18:00:47,refer1,Lipton with milk,B.1,1.0,15000,Thao tác sai
-19,2020-12-29 16:17:47,booking1,Bia Heiniken,B.1,1.0,30000,Thao tác sai
-20,2020-12-29 21:34:11,receptionist,Thuốc lá Vinataba,B.1,1.0,30000,Thao tác sai
-21,2020-12-29 22:22:10,refer1,booking1,B.13,0.016666666666666666,0,Thao tác sai
-22,2020-12-29 22:26:09,booking1,booking1,B.18,0.016666666666666666,0,Thao tác sai
-23,2020-12-30 15:50:56,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-24,2020-12-30 15:50:59,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-25,2020-12-30 15:51:01,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-26,2020-12-30 15:51:04,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-27,2020-12-29 22:56:50,booking1,refer1,B.18,0.016666666666666666,0,Thao tác sai
-28,2020-12-29 22:22:21,refer1,reception1,B.13,0.016666666666666666,0,Thao tác sai
-29,2020-12-29 22:49:34,cashier,reception1,B.3,0.016666666666666666,0,Thao tác sai
-30,2020-12-30 15:51:07,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-31,2020-12-30 15:51:09,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-32,2020-12-30 15:51:13,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-33,2020-12-30 15:51:15,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-34,2020-12-30 15:51:19,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-35,2020-12-30 15:51:24,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-36,2020-12-30 15:51:27,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
-37,2020-12-30 15:51:30,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+tran_at,employee,product,table,quantity,prices,reason
+2020-12-29 14:35:55,booking1,booking1,B.1,0.03333333333333333,0,Thao tác sai
+2020-12-29 14:54:14,booking1,Súp hành tây kiểu Pháp,B.1,1.0,125000,Thao tác sai
+2020-12-29 14:54:54,booking1,Thịt nguội & phomai viên chiên kiểu Tây Ba Nha,B.1,1.0,125000,Thao tác sai
+2020-12-29 14:54:23,booking1,Súp kem rau 4 mùa,B.1,1.0,125000,Thao tác sai
+2020-12-29 15:31:18,refer1,booking1,B.1,0.5333333333333333,0,Thao tác sai
+2020-12-29 15:32:03,refer1,booking1,B.1,0.55,0,Thao tác sai
+2020-12-29 16:02:30,0982906045,Bia Heiniken,B.1,1.0,30000,"Trả hàng từ màn hình khách gọi món, với lý do : "
+2020-12-29 16:04:26,0982906045,Bia Heiniken,B.1,2.0,30000,"Trả hàng từ màn hình khách gọi món, với lý do : "
+2020-12-29 16:04:56,refer1,Bia Heiniken,B.1,2.0,30000,"Trả hàng từ màn hình khách gọi món, với lý do : Thao tác sai"
+2020-12-29 16:07:59,booking1,Bia Heiniken,B.1,1.0,30000,Thao tác sai
+2020-12-29 16:14:47,booking1,booking1,B.1,1.2666666666666666,0,Thao tác sai
+2020-12-29 16:14:49,booking1,booking1,B.1,1.2666666666666666,0,Thao tác sai
+2020-12-29 16:14:53,booking1,booking1,B.1,1.2666666666666666,0,Thao tác sai
+2020-12-29 15:48:46,0982906045,refer1,B.3,0.016666666666666666,0,Thao tác sai
+2020-12-29 22:26:13,booking1,BLOODY MARY,B.18,5.0,30000,Thao tác sai
+2020-12-29 22:34:12,cashier,BLOODY MARY,B.16,1.0,30000,Thao tác sai
+2020-12-29 22:36:09,booking1,BLOODY MARY,B.16,4.0,30000,Thao tác sai
+2020-12-29 22:22:47,refer1,Súp kém bí đỏ với sữa dừa,B.13,2.0,125000,Thao tác sai
+2020-12-29 18:00:47,refer1,Lipton with milk,B.1,1.0,15000,Thao tác sai
+2020-12-29 16:17:47,booking1,Bia Heiniken,B.1,1.0,30000,Thao tác sai
+2020-12-29 21:34:11,receptionist,Thuốc lá Vinataba,B.1,1.0,30000,Thao tác sai
+2020-12-29 22:22:10,refer1,booking1,B.13,0.016666666666666666,0,Thao tác sai
+2020-12-29 22:26:09,booking1,booking1,B.18,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:50:56,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:50:59,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:01,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:04,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-29 22:56:50,booking1,refer1,B.18,0.016666666666666666,0,Thao tác sai
+2020-12-29 22:22:21,refer1,reception1,B.13,0.016666666666666666,0,Thao tác sai
+2020-12-29 22:49:34,cashier,reception1,B.3,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:07,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:09,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:13,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:15,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:19,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:24,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:27,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai
+2020-12-30 15:51:30,0982906045,booking1,B.7,0.016666666666666666,0,Thao tác sai

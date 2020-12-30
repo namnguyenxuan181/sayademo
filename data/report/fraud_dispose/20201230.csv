@@ -1,3 +1,32 @@
-order_code,tran_at,employee,discount,amount
-HD291220-0002,2020-12-29 14:48:11.403000,booking1,0,0
-HD291220-0001,2020-12-29 14:47:54.807000,booking1,0,0
+tran_at,employee,product,reason
+2020-12-29 14:54:14,booking1,Súp hành tây kiểu Pháp,Thao tác sai
+2020-12-29 14:54:54,booking1,Thịt nguội & phomai viên chiên kiểu Tây Ba Nha,Thao tác sai
+2020-12-29 14:54:23,booking1,Súp kem rau 4 mùa,Thao tác sai
+2020-12-29 15:31:18,refer1,booking1,Thao tác sai
+2020-12-29 15:32:03,refer1,booking1,Thao tác sai
+2020-12-29 16:02:30,0982906045,Bia Heiniken,"Trả hàng từ màn hình khách gọi món, với lý do : "
+2020-12-29 16:04:26,0982906045,Bia Heiniken,"Trả hàng từ màn hình khách gọi món, với lý do : "
+2020-12-29 16:04:56,refer1,Bia Heiniken,"Trả hàng từ màn hình khách gọi món, với lý do : Thao tác sai"
+2020-12-29 16:07:59,booking1,Bia Heiniken,Thao tác sai
+2020-12-29 15:48:46,0982906045,refer1,Thao tác sai
+2020-12-29 22:26:13,booking1,BLOODY MARY,Thao tác sai
+2020-12-29 22:36:09,booking1,BLOODY MARY,Thao tác sai
+2020-12-29 22:22:47,refer1,Súp kém bí đỏ với sữa dừa,Thao tác sai
+2020-12-29 18:00:47,refer1,Lipton with milk,Thao tác sai
+2020-12-29 16:17:47,booking1,Bia Heiniken,Thao tác sai
+2020-12-29 21:34:11,receptionist,Thuốc lá Vinataba,Thao tác sai
+2020-12-29 22:22:10,refer1,booking1,Thao tác sai
+2020-12-30 15:50:56,0982906045,booking1,Thao tác sai
+2020-12-30 15:50:59,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:01,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:04,0982906045,booking1,Thao tác sai
+2020-12-29 22:56:50,booking1,refer1,Thao tác sai
+2020-12-29 22:22:21,refer1,reception1,Thao tác sai
+2020-12-30 15:51:07,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:09,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:13,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:15,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:19,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:24,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:27,0982906045,booking1,Thao tác sai
+2020-12-30 15:51:30,0982906045,booking1,Thao tác sai

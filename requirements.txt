@@ -2,4 +2,4 @@ python-dateutil
 requests
 pyspark
 pandas
-xlrd==1.2.0
+openpyxl
