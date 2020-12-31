@@ -20,7 +20,7 @@ def detect_dispose_fraud(df: pd.DataFrame) -> pd.DataFrame:
         if (employee != product) and (cashier not in employee) and (admin not in employee.lower()):
             return True
         return False
-    select_cols = ['tran_at', 'employee', 'product', 'reason']
+    select_cols = ['tran_at', 'employee', 'table', 'product', 'reason']
     df['is_fraud'] = df.apply(lambda x: detect(x['employee'], x['product']), axis=1)
 
     return df[df.is_fraud == True][select_cols]
@@ -48,8 +48,11 @@ def detect_fraud(spark: SparkSession):
     fraud_sale_order = spark.createDataFrame(detect_order_fraud(sale_order)).filter(F.to_date('tran_at') == run_date.to_date())
 
     new_fraud_dispose = fraud_dispose.subtract(existing_fraud_dispose).toPandas() if existing_fraud_dispose else fraud_dispose.toPandas()
+    new_fraud_dispose = new_fraud_dispose.sort_values(by=['tran_at', 'table'])
 
     new_fraud_sale_order = fraud_sale_order.subtract(existing_fraud_order).toPandas() if existing_fraud_order else fraud_sale_order.toPandas()
+
+    new_fraud_sale_order = new_fraud_sale_order.sort_values(by=['tran_at'])
 
     print(new_fraud_dispose)
     print(existing_fraud_dispose)

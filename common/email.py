@@ -12,9 +12,9 @@ def send_email(dispose, sale_order):
 
     if len(dispose) > 0:
         email_text += f" <p> danh sách hủy hàng </p> <table border='1'>"
-        email_text += f"<tr><th>thời gian</th> <th>nhân viên</th> <th>mặt hàng</th> <th>lý do</th>"
+        email_text += f"<tr><th>thời gian</th> <th>nhân viên</th> <th>bàn</th> <th>mặt hàng</th> <th>lý do</th>"
         for row in dispose.to_dict(orient='records'):
-            email_text += f"<tr><td>{row['tran_at']}</td> <td>{row['employee']}</td> <td>{row['product']}</td> <td> {row['reason']}</td>"
+            email_text += f"<tr><td>{row['tran_at']}</td> <td>{row['employee']}</td><td>{row['table']}</td> <td>{row['product']}</td> <td> {row['reason']}</td>"
         email_text += "</table>"
     if len(sale_order) > 0:
         email_text += f" <p> danh sách thanh toán trái phép</p> <table border='1'>"
