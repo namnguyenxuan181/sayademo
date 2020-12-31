@@ -55,10 +55,10 @@ def detect_fraud(spark: SparkSession):
     print(existing_fraud_dispose)
     print(new_fraud_sale_order)
     if len(new_fraud_dispose) > 0 or len(new_fraud_sale_order) > 0:
-        # send_email(
-        #     new_fraud_dispose,
-        #     new_fraud_sale_order
-        # )
+        send_email(
+            new_fraud_dispose,
+            new_fraud_sale_order
+        )
         fraud_dispose.toPandas().to_csv(f'data/report/fraud_dispose/{run_date}.csv', index=False)
         fraud_sale_order.toPandas().to_csv(f'data/report/fraud_order/{run_date}.csv', index=False)
     else:
