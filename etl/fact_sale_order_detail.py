@@ -5,7 +5,7 @@ import pandas as pd
 from common.utils import RunDate
 
 
-class FactSaleOrder:
+class FactSaleOrderDetail:
     def __init__(self, run_date: RunDate):
         self.run_date = run_date
 
@@ -41,4 +41,4 @@ class FactSaleOrder:
 if __name__ == '__main__':
     run_date = RunDate(date.today())
     print(f'run fact sale_order_detail for {run_date}')
-    FactSaleOrder(run_date).clean_and_save_data()
+    FactSaleOrderDetail(run_date).clean_and_save_data()
