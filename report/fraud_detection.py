@@ -48,7 +48,7 @@ def detect_fraud(spark: SparkSession):
     fraud_sale_order = spark.createDataFrame(detect_order_fraud(sale_order)).filter(F.to_date('tran_at') == run_date.to_date())
 
     new_fraud_dispose = fraud_dispose.subtract(existing_fraud_dispose).toPandas() if existing_fraud_dispose else fraud_dispose.toPandas()
-    new_fraud_dispose = new_fraud_dispose.sort_values(by=['tran_at', 'table'])
+    new_fraud_dispose = new_fraud_dispose.sort_values(by=['table', 'tran_at',])
 
     new_fraud_sale_order = fraud_sale_order.subtract(existing_fraud_order).toPandas() if existing_fraud_order else fraud_sale_order.toPandas()
 
