@@ -28,15 +28,19 @@ def detect_dispose_fraud(df: pd.DataFrame) -> pd.DataFrame:
 
 def detect_fraud(spark: SparkSession):
     run_date = RunDate(date.today())
-    print('detection fraud')
+    print('detect fraud')
     sale_order = pd.read_csv(f'data/etl/fact/sale_order/{run_date}.csv')
 
     dispose = pd.read_csv(f'data/etl/fact/dispose/{run_date}.csv')
     try:
         existing_fraud_dispose = spark.createDataFrame(pd.read_csv(f'data/report/fraud_dispose/{run_date}.csv'))
-        existing_fraud_order = spark.createDataFrame(pd.read_csv(f'data/report/fraud_order/{run_date}.csv'))
+
     except:
         existing_fraud_dispose = None
+
+    try:
+        existing_fraud_order = spark.createDataFrame(pd.read_csv(f'data/report/fraud_order/{run_date}.csv'))
+    except:
         existing_fraud_order = None
 
     fraud_dispose = spark.createDataFrame(detect_dispose_fraud(dispose)).filter(F.to_date('tran_at') == run_date.to_date())
@@ -48,12 +52,13 @@ def detect_fraud(spark: SparkSession):
     new_fraud_sale_order = fraud_sale_order.subtract(existing_fraud_order).toPandas() if existing_fraud_order else fraud_sale_order.toPandas()
 
     print(new_fraud_dispose)
+    print(existing_fraud_dispose)
     print(new_fraud_sale_order)
     if len(new_fraud_dispose) > 0 or len(new_fraud_sale_order) > 0:
-        send_email(
-            new_fraud_dispose,
-            new_fraud_sale_order
-        )
+        # send_email(
+        #     new_fraud_dispose,
+        #     new_fraud_sale_order
+        # )
         fraud_dispose.toPandas().to_csv(f'data/report/fraud_dispose/{run_date}.csv', index=False)
         fraud_sale_order.toPandas().to_csv(f'data/report/fraud_order/{run_date}.csv', index=False)
     else:
