@@ -10,7 +10,7 @@ from ingestion.dispose import download_dispose
 from ingestion.sale_order import download_sale_order
 from report.fraud_detection import detect_fraud
 
-REPORT_TIME_RANGE = 60 * 5
+REPORT_TIME_RANGE = 60 * 1
 
 
 def main(spark: SparkSession):
