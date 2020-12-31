@@ -1,7 +1,7 @@
 from datetime import date
 
 import pandas as pd
-from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession, functions as F
 
 from common.email import send_email
 from common.utils import RunDate
@@ -39,9 +39,9 @@ def detect_fraud(spark: SparkSession):
         existing_fraud_dispose = None
         existing_fraud_order = None
 
-    fraud_dispose = spark.createDataFrame(detect_dispose_fraud(dispose))
+    fraud_dispose = spark.createDataFrame(detect_dispose_fraud(dispose)).filter(F.to_date('tran_at') == run_date.to_date())
 
-    fraud_sale_order = spark.createDataFrame(detect_order_fraud(sale_order))
+    fraud_sale_order = spark.createDataFrame(detect_order_fraud(sale_order)).filter(F.to_date('tran_at') == run_date.to_date())
 
     new_fraud_dispose = fraud_dispose.subtract(existing_fraud_dispose).toPandas() if existing_fraud_dispose else fraud_dispose.toPandas()
 
